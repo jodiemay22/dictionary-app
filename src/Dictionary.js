@@ -8,7 +8,6 @@ export default function Dictionary() {
 
   function search(event) {
     event.preventDefault();
-    alert(`Searching for ${keyword}`);
     let apiURL = `http://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiURL).then(handleResponse);
   }
