@@ -8,9 +8,9 @@ export default function WordSearchResults(props) {
         <h2 className="word-header">{props.results.word}:</h2>
         {props.results.meanings.map(function (meaning, index) {
           return (
-            <div key={index}>
+            <p key={index}>
               <Meaning meaning={meaning} />
-            </div>
+            </p>
           );
         })}
       </div>
